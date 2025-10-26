@@ -7,7 +7,7 @@ Simple Python wrapper to fetch **historical market data** directly from Yahoo Fi
 ## 🌐 Features
 - Retrieve one or multiple Yahoo tickers (e.g. `['AAPL', 'XIU.TO', '^GSPC']`)
 - Customizable intervals: `'1m','2m','5m','15m','30m','60m','90m','1h','1d','5d','1wk','1mo','3mo'`
-- Choose range period (e.g. `'1y'`, `'5y'`, `'max'`)
+- Choose range period **range_val** (e.g. `'1y'`, `'5y'`), if range is empty it returns all data available
 - Fetch one or many metrics: `'open', 'high', 'low', 'close', 'volume', 'adjclose', 'splits', 'dividends'`
 - `adjclose` and `close` automatically return **two DataFrames** each: price data and returns
 - Optional CSV export for quick saving
@@ -37,7 +37,6 @@ tickers = ['CAD=X', '^SPX', 'DOL.TO']
 results = api.get_yahoo_data(
     tickers=tickers,
     interval="1d",                 # default value is "1d"
-    range_val="1y",                # default: all available data
     metric=['adjclose', 'volume'], # request multiple metrics
     csv_output=False               # save results to CSV if True
 )

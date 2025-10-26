@@ -25,3 +25,35 @@ pip install --index-url https://test.pypi.org/simple/ \
             --upgrade \
             --force-reinstall \
             --no-deps
+```
+
+---
+
+## 🚀 Quick Start
+```bash
+from yahoo_api import YahooAPI
+
+api = YahooAPI()
+
+tickers = ['CAD=X', '^SPX', 'DOL.TO']
+results = api.get_yahoo_data(
+    tickers=tickers,
+    interval="1d",             # default value is "1d"
+    range_val="1y",            # default: all available data
+    metric=['adjclose', 'volume'],  # request multiple metrics
+    csv_output=False           # save results to CSV if True
+)
+
+# Unpack results (adjclose returns two DataFrames: data and returns)
+df_adjclose, df_returns, df_volume = results
+```
+
+---
+
+## 🧠 more examples
+```bash
+metric=['adjclose', 'volume']
+→ returns = (df_adjclose, df_adjclose_returns, df_volume)
+
+metric=['open','close','dividends']
+→ returns = (df_open, df_close, df_close_returns, df_dividends)

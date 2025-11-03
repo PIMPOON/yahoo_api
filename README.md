@@ -26,7 +26,8 @@ pip install aiohttp tenacity pandas numpy requests nest_asyncio
 pip install --index-url https://test.pypi.org/simple/ \
             --extra-index-url https://pypi.org/simple \
             yahoo-finance-api-po \
-            --upgrade
+            --upgrade \
+            --no-deps
 ```
 
 ---

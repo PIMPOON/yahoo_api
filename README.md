@@ -26,8 +26,7 @@ pip install aiohttp asyncio pandas numpy requests numpy
 pip install --index-url https://test.pypi.org/simple/ \
             --extra-index-url https://pypi.org/simple \
             yahoo-finance-api-po \
-            --upgrade \
-            --no-deps
+            --upgrade
 ```
 
 ---

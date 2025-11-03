@@ -17,8 +17,6 @@ Simple Python wrapper to fetch **historical market data** directly from Yahoo Fi
 ## ⚙️ Installation
 
 ```bash
-python -m pip install --upgrade pip setuptools wheel twine
-
 pip install --index-url https://test.pypi.org/simple/ \
             --extra-index-url https://pypi.org/simple \
             yahoo-finance-api-po \

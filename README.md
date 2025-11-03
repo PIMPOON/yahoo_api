@@ -22,9 +22,7 @@ python -m pip install --upgrade pip setuptools wheel twine
 pip install --index-url https://test.pypi.org/simple/ \
             --extra-index-url https://pypi.org/simple \
             yahoo-finance-api-po \
-            --upgrade \
-            --force-reinstall \
-            --no-deps
+            --upgrade
 ```
 
 ---

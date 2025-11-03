@@ -14,6 +14,12 @@ Simple Python wrapper to fetch **historical market data** directly from Yahoo Fi
 
 ---
 
+## ⚙️ Install dependencies
+
+```bash
+pip install aiohttp tenacity pandas numpy requests nest_asyncio
+```
+
 ## ⚙️ Installation
 
 ```bash

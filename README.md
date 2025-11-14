@@ -21,12 +21,16 @@ pip install aiohttp tenacity pandas numpy requests numpy
 ```
 
 ## ⚙️ Package installation
-
+macOS
 ```bash
 pip install --index-url https://test.pypi.org/simple/ \
             --extra-index-url https://pypi.org/simple \
             yahoo-finance-api-po \
             --upgrade
+```
+Windows
+```
+pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple yahoo-finance-api-po --upgrade
 ```
 
 ---
